@@ -1,0 +1,126 @@
+.btn-default:active:focus,.btn-default:active:hover{
+  background-color: pink
+}
+.my-wrap{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.nav-header{
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  /*background-color: #F48FB1;*/
+  background-image: url(./images/d.jpg) ;
+  background-size: cover;
+  padding: 0 10px;
+}
+.nav-header h3{
+  margin: 0;
+  color: #fff;
+}
+.nav-header button{
+  height: 40px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  font-size: 22px;
+}
+.nav-header span{
+  line-height: 40px;
+}
+.navimg{
+  display: block;
+  width: 5vw;
+  height: 7vh;
+  float: left;
+}
+.main{
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+.nav-footer{
+  flex-shrink: 0;
+  display: flex;
+  height: 80px;
+  background-color: #ccc;
+  background-image: url(./images/d.jpg) ;
+  background-size: cover;
+  justify-content: space-around;
+  align-items: center;
+}
+.main{
+  flex-grow: 1;
+  overflow-y: scroll;
+  display: flex;
+}
+.blog-warp{
+  flex-grow: 1;
+  margin-top: 20px;
+}
+.blog-card{
+  padding: 0 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.blog-index{
+  background-color: #00bcd4;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  height: 60px;
+  padding-top: 5px;
+}
+.blog-index span{
+  border-radius: 50%;
+  border:2px solid #fff;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+}
+.blog-context{
+  box-shadow: rgba(0, 0, 0, 0.3) 1px 2px 6px;
+  padding: 20px;
+  color: #666;
+}
+.blog-content h3{
+  margin: 10px 0;
+}
+.work-container{
+  width: 100%;
+  display: flex;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+.work-card{
+  width: 96%;
+  margin: 10px auto;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  flex-grow: 0;
+}
+@media (min-width:540px) {
+  .work-card{
+    width: 48%;
+  }
+}
+.work-card img{
+  width: 100%;
+  display: block;
+}
+.work-text{
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color:#fff;
+  padding-left: 10px;
+  border-radius: 0px 0px 5px 5px;
+}
